@@ -184,9 +184,13 @@ The project uses Tailwind CSS with custom color schemes and responsive breakpoin
 ## 🚀 Deployment
 
 ### Vercel (Recommended)
-1. Connect your GitHub repository
-2. Set environment variables
-3. Deploy automatically on push
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Ffalihfaizal95%2FLectureAI)
+
+1. **Quick Deploy**: Click the button above to deploy instantly
+2. **Manual Deploy**: 
+   - Connect your GitHub repository
+   - Set environment variables
+   - Deploy automatically on push
 
 ### Other Platforms
 - **Netlify**: Static site generation
