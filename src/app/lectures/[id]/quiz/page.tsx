@@ -224,9 +224,9 @@ export default function QuizPage({ params }: { params: { id: string } }) {
                             {index + 1}. {question.question}
                           </p>
                           
-                          {question.type === 'mcq' && (
-                            <div className="space-y-2">
-                              {question.options.map((option, optIndex) => (
+                                                     {question.type === 'mcq' && question.options && (
+                             <div className="space-y-2">
+                               {question.options.map((option, optIndex) => (
                                 <div key={optIndex} className={`text-sm ${
                                   optIndex === question.correctAnswer ? 'text-green-700 font-medium' :
                                   optIndex === userAnswer ? 'text-red-700 font-medium' : 'text-gray-600'
