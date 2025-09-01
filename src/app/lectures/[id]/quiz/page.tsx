@@ -124,7 +124,7 @@ export default function QuizPage({ params }: { params: { id: string } }) {
         if (userAnswer === question.correctAnswer) correct++;
       } else if (question.type === 'short') {
         // For short answer, we'll consider it correct if answered
-        if (userAnswer && userAnswer.trim().length > 0) correct++;
+        if (userAnswer && typeof userAnswer === 'string' && userAnswer.trim().length > 0) correct++;
       }
     });
     return Math.round((correct / mockQuiz.questions.length) * 100);
