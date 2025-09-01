@@ -333,7 +333,7 @@ export default function QuizPage({ params }: { params: { id: string } }) {
             </h2>
           </div>
 
-          {currentQ.type === 'mcq' && (
+          {currentQ.type === 'mcq' && currentQ.options && (
             <div className="space-y-3">
               {currentQ.options.map((option, index) => (
                 <label key={index} className="flex items-center space-x-3 p-3 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer">
