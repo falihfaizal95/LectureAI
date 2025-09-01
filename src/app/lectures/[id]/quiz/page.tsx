@@ -207,7 +207,7 @@ export default function QuizPage({ params }: { params: { id: string } }) {
                   const userAnswer = userAnswers[question.id];
                   const isCorrect = question.type === 'mcq' 
                     ? userAnswer === question.correctAnswer
-                    : userAnswer && userAnswer.trim().length > 0;
+                    : userAnswer && typeof userAnswer === 'string' && userAnswer.trim().length > 0;
                   
                   return (
                     <div key={question.id} className={`p-4 rounded-lg border ${
