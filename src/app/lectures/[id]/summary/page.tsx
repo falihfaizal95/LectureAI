@@ -76,9 +76,9 @@ export default function LectureSummaryPage({ params }: { params: { id: string } 
   const [isBookmarked, setIsBookmarked] = useState(false);
 
   const tabs = [
-    { id: 'summary', name: 'Summary', icon: BookOpen },
-    { id: 'transcript', name: 'Transcript', icon: FileText },
-    { id: 'keywords', name: 'Key Terms', icon: Brain },
+    { id: 'summary' as const, name: 'Summary', icon: BookOpen },
+    { id: 'transcript' as const, name: 'Transcript', icon: FileText },
+    { id: 'keywords' as const, name: 'Key Terms', icon: Brain },
   ];
 
   return (

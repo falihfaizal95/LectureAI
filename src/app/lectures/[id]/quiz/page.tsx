@@ -73,7 +73,7 @@ const mockQuiz = {
 
 export default function QuizPage({ params }: { params: { id: string } }) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [userAnswers, setUserAnswers] = useState<{[key: number]: any}>({});
+  const [userAnswers, setUserAnswers] = useState<{[key: number]: number | string}>({});
   const [showResults, setShowResults] = useState(false);
   const [quizStarted, setQuizStarted] = useState(false);
   const [timeRemaining, setTimeRemaining] = useState(600); // 10 minutes
@@ -93,7 +93,7 @@ export default function QuizPage({ params }: { params: { id: string } }) {
     }, 1000);
   };
 
-  const handleAnswer = (questionId: number, answer: any) => {
+  const handleAnswer = (questionId: number, answer: number | string) => {
     setUserAnswers(prev => ({
       ...prev,
       [questionId]: answer

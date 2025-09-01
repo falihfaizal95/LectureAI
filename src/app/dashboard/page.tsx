@@ -4,11 +4,9 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { 
   BookOpen, 
-  Play, 
   Clock, 
   Calendar, 
   Search, 
-  Filter,
   Plus,
   FileText,
   Brain,
@@ -211,11 +209,11 @@ export default function DashboardPage() {
               </div>
             </div>
             <div className="flex gap-2">
-              <select
-                value={filterStatus}
-                onChange={(e) => setFilterStatus(e.target.value as any)}
-                className="px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-              >
+                              <select
+                  value={filterStatus}
+                  onChange={(e) => setFilterStatus(e.target.value as 'all' | 'completed' | 'processing')}
+                  className="px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                >
                 <option value="all">All Status</option>
                 <option value="completed">Completed</option>
                 <option value="processing">Processing</option>

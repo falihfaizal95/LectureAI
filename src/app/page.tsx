@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Upload, BookOpen, Brain, Target } from 'lucide-react';
+import { Upload, Brain, Target } from 'lucide-react';
 
 export default function Home() {
   return (

@@ -30,7 +30,7 @@ export default function UploadPage() {
         }, 2000);
       }
     },
-    onDropRejected: (fileRejections) => {
+    onDropRejected: () => {
       setErrorMessage('File type not supported or file too large. Please use MP3, M4A, WAV, or MP4 files under 500MB.');
     }
   });
@@ -50,7 +50,7 @@ export default function UploadPage() {
           setUploadStatus('completed');
         }, 3000);
       }, 2000);
-    } catch (error) {
+    } catch {
       setUploadStatus('error');
       setErrorMessage('Failed to process YouTube URL. Please check the link and try again.');
     }
@@ -213,7 +213,7 @@ export default function UploadPage() {
               <div className="space-y-4">
                 <p className="text-gray-600">
                   Your lecture has been successfully uploaded and is being processed. 
-                  You'll receive a notification when your summary is ready.
+                  You&apos;ll receive a notification when your summary is ready.
                 </p>
                 <div className="flex space-x-3">
                   <button
