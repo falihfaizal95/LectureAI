@@ -160,7 +160,7 @@ export default function LectureSummaryPage({ params }: { params: { id: string } 
                 return (
                   <button
                     key={tab.id}
-                    onClick={() => setActiveTab(tab.id as any)}
+                    onClick={() => setActiveTab(tab.id)}
                     className={`py-4 px-1 border-b-2 font-medium text-sm ${
                       isActive
                         ? 'border-blue-500 text-blue-600'
