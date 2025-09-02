@@ -1,8 +1,8 @@
-# Lecture Summarizer MVP
+# Lecture Summarizer
 
 Turn your lecture recordings into AI-powered study notes, practice quizzes, and study materials.
 
-## 🎯 MVP Goals (v0.1)
+
 
 **Single-Lecture Summarizer**: Transform one audio file into clean, structured study notes.
 
