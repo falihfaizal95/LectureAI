@@ -23,6 +23,10 @@ Turn your lecture recordings into AI-powered study notes, practice quizzes, and 
 
 ## 🚀 Getting Started
 
+### 🌐 **Live Demo**
+**Your Lecture Summarizer is now live at:**  
+**https://lecture-summarizer-e68051miq-falih-faizals-projects.vercel.app**
+
 ### Prerequisites
 - Node.js 18+ 
 - npm or yarn
@@ -31,7 +35,8 @@ Turn your lecture recordings into AI-powered study notes, practice quizzes, and 
 
 1. **Clone and navigate to the project**
    ```bash
-   cd lecture-summarizer
+   git clone https://github.com/falihfaizal95/LectureAI.git
+   cd LectureAI
    ```
 
 2. **Install dependencies**
@@ -84,6 +89,9 @@ src/
 
 ## 📱 Features Overview
 
+### 🌐 **Live Demo Available**
+**Test all features right now at:** https://lecture-summarizer-e68051miq-falih-faizals-projects.vercel.app
+
 ### 1. Landing Page
 - Hero section with clear value proposition
 - Feature highlights (Summaries, Quizzes, Study Mode)
@@ -122,6 +130,7 @@ src/
 - [x] Dashboard with mock data
 - [x] Summary display with tabs
 - [x] Quiz interface and scoring
+- [x] **Production deployment on Vercel** 🚀
 
 ### Phase 2: Backend Integration 🚧
 - [ ] Supabase setup (auth, database, storage)
@@ -183,7 +192,14 @@ The project uses Tailwind CSS with custom color schemes and responsive breakpoin
 
 ## 🚀 Deployment
 
-### Vercel (Recommended)
+### ✅ **Current Status: LIVE**
+**Your Lecture Summarizer is successfully deployed on Vercel!**
+
+- **🌐 Live URL**: https://lecture-summarizer-e68051miq-falih-faizals-projects.vercel.app
+- **📊 Vercel Dashboard**: https://vercel.com/falih-faizals-projects/lecture-summarizer
+- **🔄 Auto-deploy**: Enabled - updates automatically when you push to GitHub
+
+### Deploy Your Own Copy
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Ffalihfaizal95%2FLectureAI)
 
 1. **Quick Deploy**: Click the button above to deploy instantly

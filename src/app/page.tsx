@@ -29,9 +29,14 @@ export default function Home() {
                 >
                   Upload Lecture
                 </Link>
-                <Link href="/demo" className="text-sm font-semibold leading-6 text-gray-900">
+                <a 
+                  href="https://lecture-summarizer-e68051miq-falih-faizals-projects.vercel.app" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-sm font-semibold leading-6 text-gray-900 hover:text-blue-600 transition-colors"
+                >
                   See Demo <span aria-hidden="true">→</span>
-                </Link>
+                </a>
               </div>
             </div>
           </div>
@@ -112,9 +117,14 @@ export default function Home() {
               >
                 Get Started
               </Link>
-              <Link href="/about" className="text-sm font-semibold leading-6 text-white">
-                Learn more <span aria-hidden="true">→</span>
-              </Link>
+              <a 
+                href="https://lecture-summarizer-e68051miq-falih-faizals-projects.vercel.app" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-sm font-semibold leading-6 text-white hover:text-blue-200 transition-colors"
+              >
+                See Demo <span aria-hidden="true">→</span>
+              </a>
             </div>
             <svg
               viewBox="0 0 1024 1024"
