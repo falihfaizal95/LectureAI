@@ -232,6 +232,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Adaptive practice scheduling
 - Confidence tracking
 
----
-
 **Built with ❤️ for students everywhere**
