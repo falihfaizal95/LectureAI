@@ -7,7 +7,7 @@ Turn your lecture recordings into AI-powered study notes, practice quizzes, and 
 **Single-Lecture Summarizer**: Transform one audio file into clean, structured study notes.
 
 ### User Story
-> "As a student, I upload a lecture recording and get a concise summary with key points I can review on my phone."
+> "As a student, I upload a lecture recording and get a concise summary with key points I can review on my phone. It allows me to be focused on the class instead of word for word copying down what my professor says."
 
 ### Core Features
 - ✅ **Audio Upload**: Support for MP3, M4A, WAV, MP4 files (up to 500MB)
