@@ -1,4 +1,4 @@
-# Lecture Summarizer
+# LectureAI
 
 Turn your lecture recordings into AI-powered study notes, practice quizzes, and study materials.
 
