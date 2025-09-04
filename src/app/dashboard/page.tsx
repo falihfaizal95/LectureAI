@@ -197,7 +197,7 @@ export default function DashboardPage() {
         <div className="bg-white shadow rounded-lg p-6 mb-8">
           <h3 className="text-lg font-semibold text-gray-900 mb-4">Weekly Progress</h3>
           <div className="grid grid-cols-7 gap-2">
-            {['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'].map((day, index) => (
+            {['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'].map((day) => (
               <div key={day} className="text-center">
                 <div className="text-xs text-gray-500 mb-2">{day}</div>
                 <div className="bg-gray-200 rounded h-20 flex items-end justify-center p-1">

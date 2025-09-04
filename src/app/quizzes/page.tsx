@@ -9,7 +9,6 @@ import {
   Play,
   Target,
   TrendingUp,
-  Calendar,
   BookOpen
 } from 'lucide-react';
 
@@ -221,7 +220,7 @@ export default function QuizzesPage() {
               <select
                 id="difficulty-filter"
                 value={filterDifficulty}
-                onChange={(e) => setFilterDifficulty(e.target.value as any)}
+                onChange={(e) => setFilterDifficulty(e.target.value as 'all' | 'easy' | 'medium' | 'hard')}
                 className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               >
                 <option value="all">All Difficulties</option>
@@ -237,7 +236,7 @@ export default function QuizzesPage() {
               <select
                 id="status-filter"
                 value={filterStatus}
-                onChange={(e) => setFilterStatus(e.target.value as any)}
+                onChange={(e) => setFilterStatus(e.target.value as 'all' | 'new' | 'available' | 'completed')}
                 className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               >
                 <option value="all">All Status</option>

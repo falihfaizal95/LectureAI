@@ -7,9 +7,7 @@ import {
   Target, 
   Clock, 
   CheckCircle, 
-  XCircle,
   TrendingUp,
-  Calendar,
   BookOpen,
   Zap
 } from 'lucide-react';
@@ -178,7 +176,7 @@ export default function StudyPage() {
                     : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
                 }`}
               >
-                Today's Due ({mockStudyData.todayDue.length})
+                Today&apos;s Due ({mockStudyData.todayDue.length})
               </button>
               <button
                 onClick={() => setActiveTab('upcoming')}
@@ -207,7 +205,7 @@ export default function StudyPage() {
             {/* Today's Due Tab */}
             {activeTab === 'today' && (
               <div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-4">Today's Study Session</h3>
+                <h3 className="text-lg font-semibold text-gray-900 mb-4">Today&apos;s Study Session</h3>
                 {mockStudyData.todayDue.length === 0 ? (
                   <div className="text-center py-12">
                     <CheckCircle className="mx-auto h-12 w-12 text-green-600 mb-4" />
