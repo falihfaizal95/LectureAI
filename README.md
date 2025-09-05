@@ -69,7 +69,7 @@ src/
 └── globals.css           # Tailwind CSS styles
 ```
 
-## 🎨 Tech Stack
+## 🎨 Tech Stack.
 
 ### Frontend
 - **Next.js 14** - React framework with app router
