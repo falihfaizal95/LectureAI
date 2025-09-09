@@ -241,7 +241,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ### v0.3 - Knowledge Discovery
 - Keyword cloud visualization
 - Full-text search
-- Concept linking across lectures
+- Concept linking across lectures.
+- Breaks down huge concepts into smaller parts.
 
 ### v0.4 - Study Intelligence
 - Spaced repetition algorithms
