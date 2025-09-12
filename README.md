@@ -31,7 +31,7 @@ Turn your lecture recordings into AI-powered study notes, practice quizzes, and 
 - Node.js 18+ 
 - npm or yarn
 
-### Installation.
+### Installation
 
 1. **Clone and navigate to the project**
    ```bash
