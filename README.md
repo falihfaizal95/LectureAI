@@ -245,7 +245,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Breaks down huge concepts into smaller parts.
 
 ### v0.4 - Study Intelligence
-- Spaced repetition algorithms
+- Spaced repetition algorithms.
 - Adaptive practice scheduling
 - Confidence tracking
 
