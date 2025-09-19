@@ -21,7 +21,7 @@ Turn your lecture recordings into AI-powered study notes, practice quizzes, and 
 - ✅ **Practice Quizzes**: AI-generated questions with explanations
 - ✅ **Mobile-First Design**: Responsive web app for all devices
 
-## 🚀 Getting Started
+## 🚀 Getting Started.
 
 ### 🌐 **Live Demo**
 **Your Lecture Summarizer is now live at:**  
