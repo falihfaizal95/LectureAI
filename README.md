@@ -15,7 +15,7 @@ Turn your lecture recordings into AI-powered study notes, practice quizzes, and 
 - ✅ **AI Transcription**: Convert speech to text using AI
 - ✅ **Smart Summarization**: Generate structured summaries with:
   - TL;DR bullet points (5-7 key takeaways)
-  - Key terms with definitions
+  - Key terms with definitions.
   - Notable examples and sections
 - ✅ **Study Dashboard**: Track progress and access materials
 - ✅ **Practice Quizzes**: AI-generated questions with explanations
