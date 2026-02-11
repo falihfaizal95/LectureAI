@@ -20,7 +20,7 @@ Turn your lecture recordings into AI-powered study notes, practice quizzes, and 
 - ✅ **Study Dashboard**: Track progress and access materials
 - ✅ **Practice Quizzes**: AI-generated questions with explanations
 - ✅ **Mobile-First Design**: Responsive web app for all devices
----------------------------
+------------------------------
 ## 🚀 Getting Started.
 
 ### 🌐 **Live Demo**
