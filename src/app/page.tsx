@@ -5,97 +5,105 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <div className="bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
-        <div className="relative isolate px-6 pt-14 lg:px-8">
-          {/* Background pattern */}
+      <div className="bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 min-h-screen flex items-center">
+        <div className="relative isolate w-full px-6 py-24 lg:px-8">
+          {/* Background blobs */}
           <div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
-            <div className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-blue-600 to-indigo-600 opacity-10 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style={{ clipPath: 'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)' }}></div>
+            <div className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-blue-500 to-indigo-600 opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style={{ clipPath: 'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)' }}></div>
           </div>
-          
-          <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-            <div className="text-center">
-              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                Turn Lectures into
-                <span className="text-blue-600"> Study Notes</span>
-              </h1>
-              <p className="mt-6 text-lg leading-8 text-gray-600">
-                Upload your lecture recordings and get AI-powered summaries, key terms, 
-                and practice quizzes. Study smarter, not harder.
-              </p>
-              <div className="mt-10 flex items-center justify-center gap-x-6">
-                <Link
-                  href="/upload"
-                  className="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
-                >
-                  Upload Lecture
-                </Link>
-                <a 
-                  href="https://lecture-summarizer-e68051miq-falih-faizals-projects.vercel.app" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-sm font-semibold leading-6 text-gray-900 hover:text-blue-600 transition-colors"
-                >
-                  See Demo <span aria-hidden="true">→</span>
-                </a>
-              </div>
+
+          <div className="mx-auto max-w-4xl text-center">
+            {/* Badge */}
+            <div className="mb-8 inline-flex items-center gap-2 rounded-full bg-blue-100 px-4 py-1.5 text-sm font-medium text-blue-700 ring-1 ring-blue-200">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-500 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-600"></span>
+              </span>
+              AI-Powered Study Assistant
             </div>
+
+            <h1 className="text-6xl font-extrabold tracking-tight text-gray-900 sm:text-7xl lg:text-8xl leading-none">
+              Turn Lectures into
+              <span className="block bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent mt-2">
+                Study Notes
+              </span>
+            </h1>
+
+            <p className="mt-8 text-xl leading-9 text-gray-600 max-w-2xl mx-auto sm:text-2xl">
+              Upload your lecture recordings and get AI-powered summaries, key terms,
+              and practice quizzes. Study smarter, not harder.
+            </p>
+
+            <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
+              <Link
+                href="/upload"
+                className="w-full sm:w-auto rounded-xl bg-blue-600 px-8 py-4 text-base font-semibold text-white shadow-lg shadow-blue-200 hover:bg-blue-500 hover:shadow-blue-300 hover:-translate-y-0.5 transition-all duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+              >
+                Upload Lecture
+              </Link>
+              <a
+                href="https://lecture-summarizer-e68051miq-falih-faizals-projects.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto rounded-xl border border-gray-300 bg-white px-8 py-4 text-base font-semibold text-gray-700 shadow-sm hover:border-blue-400 hover:text-blue-600 hover:-translate-y-0.5 transition-all duration-200"
+              >
+                See Demo →
+              </a>
+            </div>
+
+            {/* Social proof */}
+            <p className="mt-8 text-sm text-gray-500">
+              Trusted by <span className="font-semibold text-gray-700">10,000+</span> students worldwide
+            </p>
           </div>
-          
+
           {/* Bottom blur effect */}
           <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
-            <div className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-blue-600 to-indigo-600 opacity-10 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style={{ clipPath: 'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)' }}></div>
+            <div className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-blue-600 to-indigo-600 opacity-15 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style={{ clipPath: 'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)' }}></div>
           </div>
         </div>
       </div>
 
       {/* Features Section */}
-      <div className="bg-gray-50 py-24 sm:py-32">
+      <div className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:text-center">
-            <h2 className="text-base font-semibold leading-7 text-blue-600">Learn Faster</h2>
-            <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <div className="mx-auto max-w-2xl lg:text-center mb-16">
+            <span className="inline-block rounded-full bg-blue-50 px-3 py-1 text-sm font-semibold text-blue-600 ring-1 ring-blue-100 mb-4">Learn Faster</span>
+            <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
               Everything you need to master your lectures
-            </p>
+            </h2>
           </div>
-          <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-            <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
-              <div className="flex flex-col">
-                <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
-                  <Upload className="h-5 w-5 flex-none text-blue-600" aria-hidden="true" />
-                  Smart Summaries
-                </dt>
-                <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
-                  <p className="flex-auto">
-                    Get concise summaries with key points, important terms, and notable examples 
-                    from your lecture recordings.
-                  </p>
-                </dd>
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+            <div className="relative rounded-2xl bg-gradient-to-br from-blue-50 to-indigo-50 p-8 ring-1 ring-blue-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200">
+              <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-blue-600 shadow-md shadow-blue-200">
+                <Upload className="h-6 w-6 text-white" aria-hidden="true" />
               </div>
-              <div className="flex flex-col">
-                <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
-                  <Brain className="h-5 w-5 flex-none text-blue-600" aria-hidden="true" />
-                  Practice Quizzes
-                </dt>
-                <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
-                  <p className="flex-auto">
-                    Test your understanding with AI-generated questions based on the lecture content. 
-                    Get instant feedback and explanations.
-                  </p>
-                </dd>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Smart Summaries</h3>
+              <p className="text-base leading-7 text-gray-600">
+                Get concise summaries with key points, important terms, and notable examples
+                from your lecture recordings.
+              </p>
+            </div>
+            <div className="relative rounded-2xl bg-gradient-to-br from-purple-50 to-pink-50 p-8 ring-1 ring-purple-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200">
+              <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-purple-600 shadow-md shadow-purple-200">
+                <Brain className="h-6 w-6 text-white" aria-hidden="true" />
               </div>
-              <div className="flex flex-col">
-                <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
-                  <Target className="h-5 w-5 flex-none text-blue-600" aria-hidden="true" />
-                  Study Mode
-                </dt>
-                <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
-                  <p className="flex-auto">
-                    Master concepts with spaced repetition and personalized study schedules. 
-                    Track your progress and build study streaks.
-                  </p>
-                </dd>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Practice Quizzes</h3>
+              <p className="text-base leading-7 text-gray-600">
+                Test your understanding with AI-generated questions based on the lecture content.
+                Get instant feedback and explanations.
+              </p>
+            </div>
+            <div className="relative rounded-2xl bg-gradient-to-br from-emerald-50 to-teal-50 p-8 ring-1 ring-emerald-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200">
+              <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-600 shadow-md shadow-emerald-200">
+                <Target className="h-6 w-6 text-white" aria-hidden="true" />
               </div>
-            </dl>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Study Mode</h3>
+              <p className="text-base leading-7 text-gray-600">
+                Master concepts with spaced repetition and personalized study schedules.
+                Track your progress and build study streaks.
+              </p>
+            </div>
           </div>
         </div>
       </div>
